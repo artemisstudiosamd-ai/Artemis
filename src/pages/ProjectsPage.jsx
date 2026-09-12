@@ -30,134 +30,9 @@ const DEFAULTS = {
 
 const BASE = import.meta.env.BASE_URL || '/'
 
-const PROJECT_DATA = [
-  {
-    id: 1,
-    title: 'Cineprime Cinema, Ahmedabad',
-    desc: 'Cinema Architecture · Mumbai, 2024',
-    img: `${BASE}gallery/1.avif`,
-    fullDesc: 'Designed to make an impression with flowing lines, integrated lighting, and premium seating. An auditorium that is bold, immersive, and built for comfort.'
-  },
-  {
-    id: 2,
-    title: 'Cineprime Cinema, Ahmedabad',
-    desc: 'VIP Experience · Dubai, 2024',
-    img: `${BASE}gallery/2.avif`,
-    fullDesc: 'Designed to make an impression with flowing lines, integrated lighting, and premium seating. An auditorium that is bold, immersive, and built for comfort.'
-  },
-  {
-    id: 3,
-    title: 'Cineprime Cinema, Ahmedabad',
-    desc: 'Commercial Cinema · London, 2023',
-    img: `${BASE}gallery/3.avif`,
-    fullDesc: 'The auditorium features warm tones, refined lighting and comfortable seats with premium upholstery.'
-  },
-  {
-    id: 4,
-    title: 'Cineprime Cinema, Ahmedabad',
-    desc: 'Auditorium Design · Singapore, 2024',
-    img: `${BASE}gallery/4.avif`,
-    fullDesc: 'The auditorium features warm tones, refined lighting and comfortable seats with premium upholstery.'
-  },
-  {
-    id: 5,
-    title: 'Cineprime Cinema, Ahmedabad',
-    desc: 'Boutique Cinema · Paris, 2023',
-    img: `${BASE}gallery/5.avif`,
-    fullDesc: 'This auditorium uses clean geometric forms, integrated blue LED lighting, and layered materials to create a calm, futuristic atmosphere.'
-
-
-  },
-  {
-    id: 6,
-    title: 'Cineprime Cinema, Ahmedabad',
-    desc: 'Flagship Venue · New York, 2024',
-    img: `${BASE}gallery/6.avif`,
-    fullDesc: 'This auditorium uses clean geometric forms, integrated blue LED lighting, and layered materials to create a calm, futuristic atmosphere.'
-  },
-  {
-    id: 7,
-    title: 'Star Cinemas, Tadepalligudem',
-    desc: 'Private Screening Room · Zurich, 2023',
-    img: `${BASE}gallery/7.avif`,
-    fullDesc: 'The custom illuminated wall feature creates rhythm, defines circulation, and adds depth to the auditorium. A simple detail, executed with precision, transforms the entire space.'
-  },
-  {
-    id: 8,
-    title: 'Star Cinemas, Tadepalligudem',
-    desc: 'Immersive Theater · Tokyo, 2024',
-    img: `${BASE}gallery/8.avif`,
-    fullDesc: 'The custom illuminated wall feature creates rhythm, defines circulation, and adds depth to the auditorium. A simple detail, executed with precision, transforms the entire space.'
-  },
-  {
-    id: 9,
-    title: 'Star Cinemas, Tadepalligudem',
-    desc: 'Cinema Architecture · Berlin, 2023',
-    img: `${BASE}gallery/9.avif`,
-    fullDesc: 'The custom illuminated wall feature creates rhythm, defines circulation, and adds depth to the auditorium. A simple detail, executed with precision, transforms the entire space.'
-  },
-  {
-    id: 10,
-    title: 'Star Cinemas, Tadepalligudem',
-    desc: 'Luxury Screening · Los Angeles, 2024',
-    img: `${BASE}gallery/10.1.avif`,
-    fullDesc: 'The custom illuminated wall feature creates rhythm, defines circulation, and adds depth to the auditorium. A simple detail, executed with precision, transforms the entire space.'
-  },
-  {
-    id: 11,
-    title: 'Star Cinemas, Tadepalligudem',
-    desc: 'Multiplex Development · Doha, 2024',
-    img: `${BASE}gallery/11.avif`,
-    fullDesc: 'With premium recliners, layered ambient lighting, curated fabric prints, and acoustically integrated wall panels, this auditorium was designed to deliver comfort, luxury, and grandeur for every guest.'
-  },
-  {
-    id: 12,
-    title: 'Star Cinemas, Tadepalligudem',
-    desc: 'Premium Large Format · Sydney, 2023',
-    img: `${BASE}gallery/12.avif`,
-    fullDesc: 'With premium recliners, layered ambient lighting, curated fabric prints, and acoustically integrated wall panels, this auditorium was designed to deliver comfort, luxury, and grandeur for every guest.'
-  },
-  {
-    id: 13,
-    title: 'Star Cinemas, Tadepalligudem',
-    desc: 'Cultural Architecture · Milan, 2024',
-    img: `${BASE}gallery/13.avif`,
-    fullDesc: 'With premium recliners, layered ambient lighting, curated fabric prints, and acoustically integrated wall panels, this auditorium was designed to deliver comfort, luxury, and grandeur for every guest.'
-  },
-  {
-    id: 14,
-    title: 'Star Cinemas, Tadepalligudem',
-    img: `${BASE}gallery/14.webp`,
-    fullDesc: `The best designs are not remembered just for a grand gesture, they're remembered for the details.\n\nCurated wall features, integrated lighting, custom stitches and carefully selected materials come together to create an environment that feels immersive long before the movie begins.\n\nDesigned to be seen up close`
-  },
-  {
-    id: 15,
-    title: 'Star Cinemas, Tadepalligudem',
-    img: `${BASE}gallery/15.webp`,
-    fullDesc: `A foyer designed as the beginning of the experience.\n\nBold geometric flooring, illuminated feature panels, and layered ceiling details come together to create a foyer that feels distinctive and premium.`
-  },
-  {
-    id: 16,
-    title: 'Star Cinemas, Tadepalligudem',
-    img: `${BASE}gallery/16.webp`,
-    fullDesc: `Where the movie experience begins.\nA cinema café designed with warm integrated lighting, fluted detailing, dark framing, and reflective finishes giving the space a premium and inviting character.\n\nThe design keeps the counter functional and also making it an integral part of the overall cinema experience.`
-  },
-  {
-    id: 17,
-    title: 'Star Cinemas, Tadepalligudem',
-    img: `${BASE}gallery/17.webp`,
-    fullDesc: `Where the movie experience begins.\nA cinema café designed with warm integrated lighting, fluted detailing, dark framing, and reflective finishes giving the space a premium and inviting character.\n\nThe design keeps the counter functional and also making it an integral part of the overall cinema experience.`
-  },
-  {
-    id: 18,
-    title: 'Star Cinemas, Tadepalligudem',
-    img: `${BASE}gallery/18.webp`,
-    fullDesc: `A foyer designed as the beginning of the experience.\n\nBold geometric flooring, illuminated feature panels, and layered ceiling details come together to create a foyer that feels distinctive and premium.`
-  },
-]
-
 export default function ProjectsPage() {
   const canvasRef = useRef(null)
+  const [projectData, setProjectData] = useState([])
   const [scrollProgress, setScrollProgress] = useState(0)
   const [selectedProject, setSelectedProject] = useState(null)
   const [isHeaderHidden, setIsHeaderHidden] = useState(false)
@@ -186,6 +61,21 @@ export default function ProjectsPage() {
     params: { ...DEFAULTS },
   })
 
+  // ── Fetch project content from public/projects-content.json ─────────────
+  useEffect(() => {
+    fetch(`${BASE}projects-content.json`)
+      .then((res) => res.json())
+      .then((data) => {
+        // Prepend BASE_URL to each image path at runtime
+        const projects = data.projects.map((p) => ({
+          ...p,
+          img: `${BASE}${p.img}`,
+        }))
+        setProjectData(projects)
+      })
+      .catch((err) => console.error('[ProjectsPage] Failed to load projects-content.json:', err))
+  }, [])
+
   // Close modal on Escape key press
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -196,6 +86,7 @@ export default function ProjectsPage() {
   }, [])
 
   useEffect(() => {
+    if (projectData.length === 0) return // wait until content is fetched
     const canvas = canvasRef.current
     if (!canvas) return
 
@@ -363,7 +254,7 @@ export default function ProjectsPage() {
 
       const { meshSize, padRatio, bendPoint } = getLayoutParams()
 
-      PROJECT_DATA.forEach((data, i) => {
+      projectData.forEach((data, i) => {
         const geo = new THREE.PlaneGeometry(1, 1, SEGMENTS_X, SEGMENTS_Y)
         const tex = makeCardTexture(data, meshSize.x, meshSize.y, padRatio)
 
@@ -588,7 +479,7 @@ export default function ProjectsPage() {
       }
 
       const { meshSize, bendPoint, cols, colGap, rowH, scaleAdj, yStartOffset } = getLayoutParams()
-      const rows = Math.ceil(PROJECT_DATA.length / cols)
+      const rows = Math.ceil(projectData.length / cols)
 
       // Strip world-space width — proportional to card size (7.5% = half of original 15%)
       const STRIP_W = meshSize.x * 0.075
@@ -682,8 +573,8 @@ export default function ProjectsPage() {
         if (intersects.length > 0) {
           const hitMesh = intersects[0].object
           const idx = hitMesh.userData.projectIndex
-          if (idx !== undefined && PROJECT_DATA[idx]) {
-            setSelectedProject(PROJECT_DATA[idx])
+          if (idx !== undefined && projectData[idx]) {
+            setSelectedProject(projectData[idx])
           }
         }
       }
@@ -748,7 +639,7 @@ export default function ProjectsPage() {
       cancelAnimationFrame(animId)
       renderer.dispose()
     }
-  }, [])
+  }, [projectData])
 
   return (
     <>
