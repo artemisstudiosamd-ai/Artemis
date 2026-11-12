@@ -244,7 +244,7 @@ export default function AboutPage() {
               <h2 className="about-chapter-heading">Visit Us ...</h2>
               <div className="about-meta-divider" />
             </div>
-            <div className="about-chapter-body">
+            <div className="about-chapter-body about-chapter-body--address">
               <address className="about-body-text about-address">
                 <strong>Artemis Studios</strong><br />
                 E-1207, PNTC, Times of India Press Road,<br />

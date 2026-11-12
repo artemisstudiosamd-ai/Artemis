@@ -67,7 +67,7 @@ export default function Footer() {
                 @artemis.studios.amd ↗
               </a>
             </li>
-            <li>
+            <li className="contact-item-address">
               <span className="contact-label">Studio:</span>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=E-1207+PNTC+Times+of+India+Press+Road+Prahladnagar+Ahmedabad"

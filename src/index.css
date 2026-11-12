@@ -2458,6 +2458,12 @@ canvas#unseen-gl-canvas {
     order: 2;
   }
 
+  /* Studio address: centre under the centred chapter heading */
+  .about-chapter-body--address {
+    align-items: center;
+    text-align: center;
+  }
+
 }
 
 
@@ -2926,6 +2932,12 @@ canvas#unseen-gl-canvas {
   .contact-value {
     text-align: center;
     justify-content: center;
+  }
+
+  /* Multi-line address: stack label above value instead of side-by-side */
+  .footer-contact-list li.contact-item-address {
+    flex-direction: column;
+    gap: 4px;
   }
 
   .footer-bottom {
