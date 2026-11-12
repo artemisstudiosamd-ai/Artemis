@@ -2287,6 +2287,24 @@ canvas#unseen-gl-canvas {
   color: var(--text-primary);
 }
 
+.about-address {
+  font-style: normal;
+  margin: 0 0 16px;
+}
+
+.about-map-link {
+  font-family: 'Tenor Sans', var(--font-body);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.about-map-link:hover {
+  opacity: 0.75;
+}
+
 /* Quote Callout */
 .about-quote-callout {
   margin-top: 12px;
@@ -2575,6 +2593,11 @@ canvas#unseen-gl-canvas {
 
 .contact-value:hover {
   color: var(--color-gold);
+}
+
+.contact-address address {
+  font-style: normal;
+  line-height: 1.6;
 }
 
 .footer-bottom {

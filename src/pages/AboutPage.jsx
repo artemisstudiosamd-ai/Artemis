@@ -235,6 +235,32 @@ export default function AboutPage() {
             </div>
           </section>
 
+          <div className="about-section-divider" />
+
+          {/* ── Chapter: Studio Address ── */}
+          <section className="about-chapter about-chapter--grid about-chapter--reverse">
+            <div className="about-chapter-meta">
+              <span className="about-chapter-tag">The Studio</span>
+              <h2 className="about-chapter-heading">Visit Us ...</h2>
+              <div className="about-meta-divider" />
+            </div>
+            <div className="about-chapter-body">
+              <address className="about-body-text about-address">
+                <strong>Artemis Studios</strong><br />
+                E-1207, PNTC, Times of India Press Road,<br />
+                Prahladnagar, Ahmedabad
+              </address>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=E-1207+PNTC+Times+of+India+Press+Road+Prahladnagar+Ahmedabad"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="about-map-link"
+              >
+                Open in Google Maps ↗
+              </a>
+            </div>
+          </section>
+
         </div >
       </main >
       <Footer />
