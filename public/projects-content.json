@@ -125,6 +125,20 @@
       "desc": "",
       "img": "gallery/18.webp",
       "fullDesc": "A foyer designed as the beginning of the experience.\n\nBold geometric flooring, illuminated feature panels, and layered ceiling details come together to create a foyer that feels distinctive and premium."
+    },
+    {
+      "id": 19,
+      "title": "Cineprime Miniplex, Ahmedabad",
+      "desc": "",
+      "img": "gallery/19.png",
+      "fullDesc": "Designed to bring comfort, and cinematic indulgence together, this screen at Cineprime Miniplex, Ahmedabad reflects our approach to cinema design - where every detail contributes to the experience."
+    },
+    {
+      "id": 20,
+      "title": "Cineprime Miniplex, Ahmedabad",
+      "desc": "",
+      "img": "gallery/20.avif",
+      "fullDesc": "Warm ambient lighting, distinctive detailing, and plush recliner seating come together to create an intimate cinema experience."
     }
   ]
 }
